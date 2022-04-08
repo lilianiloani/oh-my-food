@@ -20,7 +20,7 @@ html, body {
 
     }
 }
-//recherche de localisation
+//recherche de localisation=======
 .location {
     @include flexCentre;
     height: 50px;
@@ -33,4 +33,18 @@ input {
     border: none;
     background-color: transparent;
     font-size: 1rem;
+}
+//profile==========
+.info {
+    padding: 2rem;
+    background-color: $color-page;
+    text-align: center;
+    padding-bottom: 4rem;
+    &__title {
+        margin: 0 1rem;  
+    }
+    &__subtitle {
+        margin: 1.5rem 0;
+        color: #7e7e7e;
+    }
 }

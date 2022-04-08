@@ -51,4 +51,18 @@ input {
   border: none;
   background-color: transparent;
   font-size: 1rem;
+}
+
+.info {
+  padding: 2rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.info__title {
+  margin: 0 1rem;
+}
+.info__subtitle {
+  margin: 1.5rem 0;
+  color: #7e7e7e;
 }/*# sourceMappingURL=main.css.map */
