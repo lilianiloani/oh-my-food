@@ -143,4 +143,44 @@ input {
   row-gap: 1.3rem;
 }
 
+.course {
+  display: block;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  color: inherit;
+}
+.course__img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+.course__badge {
+  position: absolute;
+  right: 0.75rem;
+  top: 1rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.course__profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+.course__description {
+  flex: auto;
+}
+.course__title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+.course__subtitle {
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
