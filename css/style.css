@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 h2, h3, h4, h5, p, a {
   font-family: "roboto", sans-serif;
 }
@@ -181,6 +181,43 @@ input {
 }
 .course__subtitle {
   margin: 0;
+}
+
+.footers {
+  background-color: #353535;
+}
+.footers__container {
+  padding: 1.5rem 1.5rem;
+}
+.footers__logo {
+  color: white;
+  font-family: "shrikhand", "cursive";
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.footers__items {
+  margin: 0;
+  padding: 0;
+}
+.footers__item {
+  margin-top: 0.5rem;
+}
+.footers--link {
+  color: white;
+}
+.footers--link:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.footers__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+  color: white;
+}
+.footers__text {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
