@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+@keyframes boxAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 h2, h3, h4, h5, p, a {
   font-family: "roboto", sans-serif;
 }
@@ -283,6 +291,103 @@ html, body {
 .menuCards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+}
+
+.menuCard {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+.menuCard__title {
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+.menuCard__title::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menuBox {
+  background-color: white;
+  padding: 1rem;
+  max-width: 100%;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+.menuBox__header {
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menuBox__title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menuBox__content {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menuBox__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+.menuBox__confirmation {
+  background-color: #99E2D0;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1rem -5rem -1rem 1rem;
+  transition-duration: 0.5s;
+}
+.menuBox:hover .menuBox__confirmation {
+  margin-right: -1rem;
+}
+.menuBox__icon {
+  color: #99E2D0;
+}
+.menuBox__iconwrap {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  transform: rotate(360deg);
+  transition-duration: 0.6s;
+}
+.menuBox:hover .menuBox__iconwrap {
+  transform: rotate(0);
+}
+
+.btnwrap {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.commander {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
