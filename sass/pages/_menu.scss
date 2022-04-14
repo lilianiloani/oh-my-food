@@ -54,3 +54,8 @@ html, body {
         font-family: "shrikhand", "cursive";
     }
 }
+// contient tout le contenu du menu de la page ==========
+.menuCards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}

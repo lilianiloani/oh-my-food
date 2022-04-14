@@ -280,4 +280,9 @@ html, body {
   font-family: "shrikhand", "cursive";
 }
 
+.menuCards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 /*# sourceMappingURL=style.css.map */
