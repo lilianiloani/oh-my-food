@@ -18,3 +18,10 @@
     text-overflow: ellipsis;
     overflow: hidden;   
 }
+@mixin boxAnime {
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: both;
+    
+}

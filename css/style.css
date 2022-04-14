@@ -8,6 +8,14 @@
     transform: scale(1);
   }
 }
+@keyframes animbutton {
+  from {
+    background-position-y: 30px;
+  }
+  to {
+    background-position-y: -30px;
+  }
+}
 h2, h3, h4, h5, p, a {
   font-family: "roboto", sans-serif;
 }
@@ -323,6 +331,10 @@ html, body {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  transform: scale(0);
+  animation-name: boxAppear;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menuBox__header {
   flex: 1;
@@ -377,6 +389,86 @@ html, body {
 }
 .menuBox:hover .menuBox__iconwrap {
   transform: rotate(0);
+}
+
+.delay-0 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.8s;
+}
+
+.delay-9 {
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-delay: 0.9s;
 }
 
 .btnwrap {
