@@ -221,6 +221,25 @@ input {
   margin: 0;
 }
 
+.fa-heart {
+  font-size: 25px;
+  font-weight: lighter;
+  color: black;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  font-weight: bolder;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animbutton 2s forwards;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
 .footers {
   background-color: #353535;
 }
