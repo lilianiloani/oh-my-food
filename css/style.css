@@ -222,7 +222,7 @@ input {
 .footers--link {
   color: white;
 }
-.footers--link:hover {
+.footers--link a :hover {
   color: white;
   background-color: transparent;
   text-decoration: underline;
