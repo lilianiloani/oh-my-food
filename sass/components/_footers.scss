@@ -1,0 +1,44 @@
+.footers {
+    background-color: $color-foot;
+    &__container {
+        padding: 1.5rem 1.5rem;
+    }
+    &__logo {
+        color: white;
+        font-family: "shrikhand", "cursive";
+        margin: 0;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        @include tablet {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__items {
+        margin: 0;
+        padding: 0;
+        @include tablet {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__item {
+        margin-top: 0.5rem;
+    }
+    &--link {
+        color: white;
+        & a :hover {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        width: 1.2rem;
+        margin-right: 0.5rem;
+        color: white;
+    }
+    &__text {
+        color: white;
+    }
+}

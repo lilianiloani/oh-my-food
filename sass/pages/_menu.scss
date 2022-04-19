@@ -63,93 +63,6 @@ html, body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-.menuCard {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0 1rem;
-    &__title {
-        position: relative;
-        padding-bottom: 0.5rem;
-        font-weight: normal;
-        &::after {
-            content: "";
-            width: 3rem;
-            height: 0.25rem;
-            background-color: $color-tertiary;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-          
-
-        }
-    }
-
-}
-.menuBox {
-    background-color: white;
-    padding: 1rem;
-    max-width: 100%;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1) ;
-    overflow: hidden;
-    cursor: pointer;
-    transform: scale(0);
-    animation-name: boxAppear;
-    animation-duration: .6s;
-    animation-timing-function: cubic-bezier(.5, 1.58,.34,.82);
-
-    &__header {
-       flex: 1;
-       @include ellipsis;
-    }
-    &__title {
-        margin: 0;
-        @include ellipsis;
-    }
-    &__content {
-        margin: 0;
-        @include ellipsis;
-    }
-    &__price {
-        font-weight: bold;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-left: 0.5rem;
-
-    }
-    &__confirmation {
-        background-color: $color-tertiary;
-        width: 4rem;
-        @include flexCentre;
-        margin: -1rem -5rem -1rem 1rem;
-        transition-duration: 0.5s;
-
-    }
-    &:hover &__confirmation {
-        margin-right: -1rem;
-
-    }
-    &__icon {
-        color: $color-tertiary;
-    }
-    &__iconwrap {
-        height: 1.6rem;
-        width: 1.6rem;
-        background-color: white;
-        @include flexCentre;
-        border-radius: 2rem;
-        transform: rotate(360deg);
-        transition-duration: 0.6s;
-
-    }
-    &:hover &__iconwrap {
-        transform: rotate(0);
-    } 
-
-}
 
 .delay-0 {
     @include boxAnime; 
@@ -200,14 +113,3 @@ html, body {
      @include boxAnime;
      animation-delay: .9s;
  }
-
-.btnwrap {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 0;
-}
-
-.commander {
-    cursor: pointer;
-    padding: 1rem 2.5rem;
-}

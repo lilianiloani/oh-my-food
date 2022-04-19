@@ -1,5 +1,5 @@
 //Button =====
-.buttonCommand {
+button {
     border: none;
     padding: 0.9rem 1.5rem;
     font-weight: 400;
@@ -14,4 +14,13 @@
         background: linear-gradient(to top left, $color-primary 10%,$color-secondary);
         box-shadow: 00.25rem 0.25rem 10px rgba(0, 0, 0, 0.1);
     }
+}
+.btnwrap {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.commander {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
 }
