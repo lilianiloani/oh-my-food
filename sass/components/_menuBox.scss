@@ -10,8 +10,7 @@
     cursor: pointer;
     transform: scale(0);
     animation-name: boxAppear;
-    animation-duration: .6s;
-    animation-timing-function: cubic-bezier(0.25, 0.1, 0.64, 1.01);
+    animation-duration: 1s;
     
     &__header {
        flex: 1;
