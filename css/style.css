@@ -728,9 +728,9 @@ html, body {
   z-index: 1000;
 }
 .header__logo {
-  height: 60px;
-  width: 200px;
-  padding-top: 0.7rem;
+  font-family: "shrikhand", "cursive";
+  font-size: 1.75rem;
+  margin: 0;
 }
 
 .location {
