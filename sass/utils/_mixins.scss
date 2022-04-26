@@ -23,7 +23,6 @@
     animation-direction: normal;
     animation-play-state: running;
     animation-fill-mode: both;
-    
 }
 @mixin tablet {
     @media all and (min-width: map-get($breakpoint, tablet)){@content;};
